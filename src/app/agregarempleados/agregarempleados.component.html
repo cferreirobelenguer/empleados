@@ -1,7 +1,11 @@
 
-<div class="container_fluid" id="agregar_container">
-    <div class="agregar_title">
-        <h1>EMPLEADOS</h1>
+<div class="container_fluid" id="agregar_container" >
+    
+    <div class="agregar_imagen">
+
+    </div>
+    <div class="agregar_title mx-5 p-5 bg-dark text-white rounded">
+        <h1>Empleados</h1>
     </div>
     <div >
         <form onSubmit="agregarDatos()" class="agregar_form" >
@@ -24,14 +28,14 @@
             </div>
             
             <div class="p-3">
-                <input type="reset" value="Restablecer" class="btn btn-primary">
+                <input type="reset" id="buttonStyle" value="Restablecer" class="btn btn-dark">
             </div>
         </form>
         
     </div>
     <div class="agregar_button">
         <!-- Se agregan los datos y se crea un objeto que va a ser agregado a una lista-->
-        <button class="btn btn-primary" (click)="agregarDatos()">Agregar datos</button>
+        <button class="btn btn-dark" id="buttonStyle" (click)="agregarDatos()">Agregar datos</button>
     </div>
     
 </div>

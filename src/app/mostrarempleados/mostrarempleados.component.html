@@ -25,12 +25,12 @@
         <form onSubmit="agregarCaracteristica(i,item)" class="agregar_form" >
             <input placeholder="Característica" name="caracteristica" [(ngModel)]="datosEmple.caracteristica"/>
             <br>
-            <input type="reset" value="Restablecer" class="btn btn-primary m-3">
+            <input type="reset" id="buttonStyle" value="Restablecer" class="btn btn-dark m-3">
         </form>
         
     </div>
     <div *ngIf="this.servicioEmpleadosService.list.length>0">
-        <button class="btn btn-primary p-3" (click)="agregarCaracteristica(i,item)">Agregar característica</button>
+        <button class="btn btn-dark" id="buttonStyle" (click)="agregarCaracteristica(i,item)">Agregar característica</button>
     </div>
 
     

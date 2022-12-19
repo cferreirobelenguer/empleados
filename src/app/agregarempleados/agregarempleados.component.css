@@ -1,3 +1,25 @@
+
+/* FONT */
+@font-face {
+    font-family: "fuente";
+    src: url("../../assets/RedHatDisplay-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+.agregar_imagen{
+    background-image:url('../../assets/4861019.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 150px;
+    width: 50%;
+}
+#buttonStyle{
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 #agregar_container{
     display:flex;
     flex-direction: column;
@@ -5,7 +27,7 @@
     justify-content: center;
     align-items: center;
     padding: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "fuente";
 }
 
 .agregar_title{
