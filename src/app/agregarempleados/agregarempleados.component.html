@@ -4,22 +4,22 @@
         <h1>EMPLEADOS</h1>
     </div>
     <div >
-        <form onSubmit="agregarDatos()" class="agregar_form">
+        <form onSubmit="agregarDatos()" class="agregar_form" >
             <div>
                 <label for="nombre">Nombre: </label><br>
-                <input placeholder="Introduce nombre" required/>
+                <input placeholder="Introduce nombre" required name='nombre' [(ngModel)]='this.empleado.nombre'/>
             </div>
             <div>
                 <label for="apellidos">Apellidos: </label><br>
-                <input placeholder="Introduce apellidos" required/>
+                <input placeholder="Introduce apellidos" required name='apellidos'  [(ngModel)]='this.empleado.apellidos'/>
             </div>
             <div>
                 <label for="dni">DNI: </label><br>
-                <input placeholder="Introduce DNI" required/>
+                <input placeholder="Introduce DNI" required name='dni'  [(ngModel)]='this.empleado.dni'/>
             </div>
             <div>
                 <label for="departamento">Departamento: </label><br>
-                <input placeholder="Introduce departamento" required/>
+                <input placeholder="Introduce departamento" required name='departamento'  [(ngModel)]='this.empleado.departamento'/>
             </div>
         </form>
         
