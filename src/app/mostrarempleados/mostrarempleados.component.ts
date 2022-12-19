@@ -19,7 +19,8 @@ export class MostrarempleadosComponent {
   }
   
   agregarCaracteristica(i:datos,item:number){
-    
+    //Se actualiza el atributo opcional de característica al darle click a agregar
+    //Se actualiza la lista con el nuevo dato a través del parámetro i e item que recorren la lista con el ngFor
     this.servicioEmpleadosService.list[item]={
       nombre:i.nombre,
       apellidos:i.apellidos,

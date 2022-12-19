@@ -5,6 +5,7 @@
     </div>
     <div >
         <form onSubmit="agregarDatos()" class="agregar_form" >
+            <!--Formulario para introducir los datos del trabajador-->
             <div>
                 <label for="nombre">Nombre: </label><br>
                 <input placeholder="Introduce nombre" required name='nombre' [(ngModel)]='this.empleado.nombre'/>
@@ -29,6 +30,7 @@
         
     </div>
     <div class="agregar_button">
+        <!-- Se agregan los datos y se crea un objeto que va a ser agregado a una lista-->
         <button class="btn btn-primary" (click)="agregarDatos()">Agregar datos</button>
     </div>
     

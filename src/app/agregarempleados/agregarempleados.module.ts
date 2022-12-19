@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AgregarempleadosComponent } from './agregarempleados.component';
 import { MostrarempleadosComponent } from '../mostrarempleados/mostrarempleados.component';
 import { FormsModule } from '@angular/forms';
-
+//Módulo que abarca los componentes agregar empleados y mostrar empleados
 
 @NgModule({
   declarations: [

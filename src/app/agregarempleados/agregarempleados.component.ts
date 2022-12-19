@@ -20,6 +20,7 @@ export class AgregarempleadosComponent {
   }
 
   agregarDatos(){
+    //Se agregan los datos al objeto
     this.empleado={
       nombre:this.empleado.nombre,
       apellidos:this.empleado.apellidos,
@@ -27,6 +28,7 @@ export class AgregarempleadosComponent {
       departamento:this.empleado.departamento
     }
     console.log(this.empleado)
+    //Se agregan el objeto a la lista
     this.servicioEmpleadosService.setLista(this.empleado)
     console.log(this.servicioEmpleadosService.list)
   }

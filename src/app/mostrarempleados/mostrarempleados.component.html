@@ -1,4 +1,4 @@
-<!--Si existen datos se muestra el listado de empleados-->
+<!--Si existen datos se muestra el listado de empleados y el botón de agregar característica-->
 
 <div *ngFor="let i of this.servicioEmpleadosService.list;let item = index" class="mostrar_container">
     <div class="p-3">
@@ -16,10 +16,12 @@
     <div class="p-3">
         <h6>{{i.departamento}}</h6>
     </div>
+    <!-- Si la característica existe se muestra el resultado-->
     <div *ngIf="this.servicioEmpleadosService.list[item].caracteristica" class="p-3">
         <h6>{{this.servicioEmpleadosService.list[item].caracteristica}}</h6>
     </div>
     <div class="p-3">
+        <!--Formulario para introducir la característica, este llama al método que actualiza el objeto y la lista-->
         <form onSubmit="agregarCaracteristica(i,item)" class="agregar_form" >
             <input placeholder="Característica" name="caracteristica" [(ngModel)]="datosEmple.caracteristica"/>
             <br>
