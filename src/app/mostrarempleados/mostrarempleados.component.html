@@ -1,1 +1,35 @@
-<p>mostrarempleados works!</p>
+<!--Si existen datos se muestra el listado de empleados-->
+
+<div *ngFor="let i of this.servicioEmpleadosService.list;let item = index" class="mostrar_container">
+    <div class="p-3">
+        <h1>Datos del empleado {{i.nombre}}</h1>
+    </div>
+    <div class="p-3">
+        <h5>{{i.nombre}}</h5>
+    </div>
+    <div class="p-3">
+        <h6>{{i.apellidos}}</h6>
+    </div>
+    <div class="p-3">
+        <h6>{{i.dni}}</h6>
+    </div>
+    <div class="p-3">
+        <h6>{{i.departamento}}</h6>
+    </div>
+    <div *ngIf="this.servicioEmpleadosService.list[item].caracteristica" class="p-3">
+        <h6>{{this.servicioEmpleadosService.list[item].caracteristica}}</h6>
+    </div>
+    <div class="p-3">
+        <form onSubmit="agregarCaracteristica(i,item)" class="agregar_form" >
+            <input placeholder="Característica" name="caracteristica" [(ngModel)]="datosEmple.caracteristica"/>
+            <br>
+            <input type="reset" value="Restablecer" class="btn btn-primary m-3">
+        </form>
+        
+    </div>
+    <div *ngIf="this.servicioEmpleadosService.list.length>0">
+        <button class="btn btn-primary p-3" (click)="agregarCaracteristica(i,item)">Agregar característica</button>
+    </div>
+
+    
+</div>
