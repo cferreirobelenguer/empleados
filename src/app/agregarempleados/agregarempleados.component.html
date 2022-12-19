@@ -1,0 +1,34 @@
+
+<div class="container_fluid" id="agregar_container">
+    <div class="agregar_title">
+        <h1>EMPLEADOS</h1>
+    </div>
+    <div >
+        <form onSubmit="agregarDatos()" class="agregar_form">
+            <div>
+                <label for="nombre">Nombre: </label><br>
+                <input placeholder="Introduce nombre" required/>
+            </div>
+            <div>
+                <label for="apellidos">Apellidos: </label><br>
+                <input placeholder="Introduce apellidos" required/>
+            </div>
+            <div>
+                <label for="dni">DNI: </label><br>
+                <input placeholder="Introduce DNI" required/>
+            </div>
+            <div>
+                <label for="departamento">Departamento: </label><br>
+                <input placeholder="Introduce departamento" required/>
+            </div>
+        </form>
+        
+    </div>
+    <div class="agregar_button">
+        <button class="btn btn-primary" (click)="agregarDatos()">AGREGAR DATOS</button>
+    </div>
+</div>
+
+
+
+<app-mostrarempleados></app-mostrarempleados>
